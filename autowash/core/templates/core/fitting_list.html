@@ -1,0 +1,41 @@
+{% extends 'app.html' %}
+{% load static%}
+
+{% block content %}
+
+<div class="fitting">
+    <div class="container">
+        <div class="fitting__inner">
+            <h3 class="title fitting__title" style="display: inline-block; border-bottom: 4px solid #e91e63;">
+                Шиномонтаж
+            </h3>
+            <p class="fitting__text text">
+
+            </p>
+            <div class="row">
+                <div class="fitting__item col-lg-3 col-sm-6 col-xs-12">
+                    <img src="{% static 'autowash/images/coleso.jpg' %}" alt=""">
+                        <p class=" fitting__item-name">Сезонный шиномонтаж</p>
+                </div>
+                <div class="fitting__item col-lg-3 col-sm-6 col-xs-12">
+                    <img src="{% static 'autowash/images/coleso.jpg' %}" alt=""">
+                        <p class=" fitting__item-name">Ремонт шин</p>
+                </div>
+                <div class="fitting__item col-lg-3 col-sm-6 col-xs-12">
+                    <img src="{% static 'autowash/images/coleso.jpg' %}" alt=""">
+                        <p class=" fitting__item-name">Сезонный шиномонтаж</p>
+                </div>
+                <div class="fitting__item col-lg-3 col-sm-6 col-xs-12">
+                    <img src="{% static 'autowash/images/coleso.jpg' %}" alt=""">
+                        <p class=" fitting__item-name">Сезонный шиномонтаж</p>
+                </div>
+                <div class="fitting__item col-lg-3 col-sm-6 col-xs-12">
+                    <img src="{% static 'autowash/images/coleso.jpg' %}" alt=""">
+                        <p class=" fitting__item-name">Сезонный шиномонтаж</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}
