@@ -385,6 +385,8 @@ ul {
     /* Выравнивание текста по центру */
 }
 
+
+
 table {
     width: 100%;
     border-collapse: collapse;
@@ -414,4 +416,38 @@ tr:nth-child(even) {
 
 tr:nth-child(odd) {
     background-color: #fff;
+}
+
+@media (max-width: 768px) {
+
+    th,
+    td {
+        font-size: 14px;
+        /* Измените размер текста по вашему усмотрению */
+    }
+
+    .title {
+        font-size: 24px;
+        /* Измените размер заголовка по вашему усмотрению */
+    }
+
+    p {
+        font-size: 12px;
+        /* Измените размер текста по вашему усмотрению */
+    }
+
+    /* Другие стили, которые вы хотите изменить на более маленьких экранах */
+}
+
+.divider-container {
+    display: flex;
+    align-items: center;
+}
+
+
+.divider {
+    flex: 1;
+    height: 5px;
+    background-color: #e91e63;
+    width: 70px;
 }
