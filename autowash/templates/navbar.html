@@ -1,7 +1,7 @@
+{% load static %}
 <nav class="navbar navbar-expand-md navbar-dark bg-dark">
     <div class="container">
         <a class="navbar-brand d-md-none d-xs-block py-3" href="{% url 'main' %}">
-            <img src="" height="40" alt="Company Logo">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
             aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -11,9 +11,9 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav mx-auto">
                 <li class="nav-item">
-                    <a class="nav-link mx-2 active" aria-current="page" href="{% url 'main' %}">Home</a>
+                    <a class="nav-link mx-2 active" aria-current="page" href="{% url 'main' %}">Главная</a>
                 </li>
-                <li class=" nav-item dropdown mx-2">
+                <!-- <li class=" nav-item dropdown mx-2">
                     <a class="nav-link mx-2 nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                         data-bs-toggle="dropdown" aria-expanded="false">
                         Услуги
@@ -25,13 +25,15 @@
                         <li><a class="dropdown-item" href="{% url 'locksmith' %}">Слесарные работы</a></li>
                         <li><a class="dropdown-item" href="{% url 'allservices' %}">Все услуги</a></li>
                     </ul>
-                </li>
-
+                </li> -->
                 <li class="nav-item">
-                    <a class="nav-link mx-2" href="#">Полезные статьи</a>
+                    <a class="nav-link mx-2" href="{% url 'wash' %}">Автомойка</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link mx-2" href="#">Адреса и контакты</a>
+                    <a class="nav-link mx-2" href="{% url 'shop' %}">Магазин</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mx-2" href="{% url 'contacts' %}">Адреса и контакты</a>
                 </li>
                 <li class="nav-item">
                     <button data-bs-toggle="modal" data-bs-target="#exampleModal"
@@ -42,14 +44,18 @@
                         aria-hidden="true">
                         <div class="modal-dialog">
                             <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                <div class="modal-header" style="background-color: #212529;">
+                                    <h5 class="modal-title" id="exampleModalLabel"></h5>
+                                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
                                         aria-label="Close"></button>
                                 </div>
-                                <div class="modal-body">
-
+                                <div class="modal-body" style="text-align: center;">
+                                    <p><span>Позвоните в наш сервис</span></p>
+                                    <a style="color: #e91e63; font-size: 1.15rem;" href="tel:84952368436">
+                                        +7 (927) 386-24-32 - Переулок Калинина, 3
+                                    </a>
                                 </div>
+                                <p class="text" style="color: #e91e63; font-size: 1.15rem; text-align: center;">alexnic898@gmail.com</p>
                             </div>
                         </div>
                     </div>

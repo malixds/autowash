@@ -3,47 +3,59 @@
 
 {% block content %}
 
-<section class="wash">
+<section class="wash mt-3">
     <div class="container">
         <div class="wash__inner">
             <h3 class="title" style="display: inline-block; border-bottom: 4px solid #e91e63;">
-                Круглосуточная комплексная автомойка в Москве
+                Круглосуточная автомойка в Каменке
             </h3>
-            <p class="text">
+            <!-- <p class="text">
                 Выберите интересующую вас услугу и нажмите на нее
             </p>
             <div class="row">
-                <div class="col-lg-3 col-sm-6 col-xs-12" style="text-align: center;">
-                    <a href="#"> <img src="{% static 'autowash/images/autowash-img1.jpg' %}" alt=""
-                            style="max-width: 100%; height: auto; display: inline-block;"></a>
-                    <a style="text-decoration: none; color: #000;" href="#">Шиномонтаж</a>
+                <div class="col-lg-3 col-md-6 col-sm-6" style="text-align: center;">
+                    <a href="{% url 'expresswash' %}">
+                        <img class="wash-img" src="{% static 'autowash/images/autowash-img1.jpg' %}" alt=""
+                            style="max-width: 100%; height: auto; display: inline-block;">
+                    </a>
+                    <a style="display: block; text-decoration: none; color: #000;" href="#">Экспресс-мойка</a>
                 </div>
-                <div class="col-lg-3 col-sm-6 col-xs-12" style="text-align: center;">
-                    <a href="#"> <img src="{% static 'autowash/images/autowash-img1.jpg' %}" alt=""
-                            style="max-width: 100%; height: auto; display: inline-block;"></a>
-                    <a style="text-decoration: none; color: #000;" href="#">Шиномонтаж</a>
+                <div class="col-lg-3 col-md-6 col-sm-6" style="text-align: center;">
+                    <a href="{% url 'euro' %}">
+                        <img class="wash-img" src="{% static 'autowash/images/autowash-img1.jpg' %}" alt=""
+                            style="max-width: 100%; height: auto; display: inline-block;">
+                    </a>
+                    <a style="display: block; text-decoration: none; color: #000;" href="#">Евромойка</a>
                 </div>
-                <div class="col-lg-3 col-sm-6 col-xs-12" style="text-align: center;">
-                    <a href="#"> <img src="{% static 'autowash/images/autowash-img1.jpg' %}" alt=""
-                            style="max-width: 100%; height: auto; display: inline-block;"></a>
-                    <a style="text-decoration: none; color: #000;" href="#">Шиномонтаж</a>
+                <div class="col-lg-3 col-md-6 col-sm-6" style="text-align: center;">
+                    <a href="{% url 'nano' %}">
+                        <img class="wash-img" src="{% static 'autowash/images/autowash-img1.jpg' %}" alt=""
+                            style="max-width: 100%; height: auto; display: inline-block;">
+                    </a>
+                    <a style="display: block; text-decoration: none; color: #000;" href="#">Наномойка</a>
                 </div>
-                <div class="col-lg-3 col-sm-6 col-xs-12" style="text-align: center;">
-                    <a href="#"> <img src="{% static 'autowash/images/autowash-img1.jpg' %}" alt=""
-                            style="max-width: 100%; height: auto; display: inline-block;"></a>
-                    <a style="text-decoration: none; color: #000;" href="#">Шиномонтаж</a>
+                <div class="col-lg-3 col-md-6 col-sm-6" style="text-align: center;">
+                    <a href="{% url 'engine' %}">
+                        <img class="wash-img" src="{% static 'autowash/images/autowash-img1.jpg' %}" alt=""
+                            style="max-width: 100%; height: auto; display: inline-block;">
+                    </a>
+                    <a style="display: block; text-decoration: none; color: #000;" href="#">Мойка двигателя</a>
                 </div>
-                <div class="col-lg-3 col-sm-6 col-xs-12" style="text-align: center;">
-                    <a href="#"> <img src="{% static 'autowash/images/autowash-img1.jpg' %}" alt=""
-                            style="max-width: 100%; height: auto; display: inline-block;"></a>
-                    <a style="text-decoration: none; color: #000;" href="#">Шиномонтаж</a>
+                <div class="col-lg-3 col-md-6 col-sm-6" style="text-align: center;">
+                    <a href="{% url 'interior' %}">
+                        <img class="wash-img" src="{% static 'autowash/images/autowash-img1.jpg' %}" alt=""
+                            style="max-width: 100%; height: auto; display: inline-block;">
+                    </a>
+                    <a style="display: block; text-decoration: none; color: #000;" href="#">Уборка салона</a>
                 </div>
-                <div class="col-lg-3 col-sm-6 col-xs-12" style="text-align: center;">
-                    <a href="#"> <img src="{% static 'autowash/images/autowash-img1.jpg' %}" alt=""
-                            style="max-width: 100%; height: auto; display: inline-block;"></a>
-                    <a style="text-decoration: none; color: #000;" href="#">Шиномонтаж</a>
+                <div class="col-lg-3 col-md-6 col-sm-6" style="text-align: center;">
+                    <a href="{% url 'cons' %}">
+                        <img class="wash-img" src="{% static 'autowash/images/autowash-img1.jpg' %}" alt=""
+                            style="max-width: 100%; height: auto; display: inline-block;">
+                    </a>
+                    <a style="display: block; text-decoration: none; color: #000;" href="#">Консервация и чернение</a>
                 </div>
-            </div>
+            </div> -->
             <p class="text">
                 Мойка машины является залогом ее эстетичного внешнего вида и максимально долгой эксплуатации. Как
                 известно, на кузов авто постоянно воздействуют мелкие частички пыли и грязи, причем даже при
@@ -54,7 +66,7 @@
             </p>
             <p class="text">
                 Решить эти проблемы поможет автомойка 24 часа, обслуживающая клиентов в удобное для них время.
-                Опытные специалисты «Метеор 24» сделают все необходимое, чтобы ваша машина выглядела презентабельно
+                Опытные специалисты ««АвтоМаг»» сделают все необходимое, чтобы ваша машина выглядела презентабельно
                 в любую пору года!
             </p>
             <p class="text">
@@ -73,82 +85,330 @@
     </div>
 </section>
 
-    <div class="container">
-        <h3 class="title" style="display: inline-block; border-bottom: 4px solid #e91e63;">
-            Цены на мойку авто
-        </h3>
-        <table>
-            <thead>
-                <tr>
-                    <th>Наименование услуги</th>
-                    <th class="right-align">1 класс*</th>
-                    <th class="right-align">2 класс*</th>
-                    <th class="right-align">3 класс*</th>
-                    <th class="right-align">4 класс*</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Шиномонтаж</td>
-                    <td class="right-align">1000 руб.</td>
-                    <td class="right-align">1000 руб.</td>
-                    <td class="right-align">1000 руб.</td>
-                    <td class="right-align">1000 руб.</td>
-                </tr>
-                <tr>
-                    <td>Сход-развал</td>
-                    <td class="right-align">500 руб.</td>
-                    <td class="right-align">500 руб.</td>
-                    <td class="right-align">500 руб.</td>
-                    <td class="right-align">500 руб.</td>
-                </tr>
-                <tr>
-                    <td>Сход-развал</td>
-                    <td class="right-align">500 руб.</td>
-                    <td class="right-align">500 руб.</td>
-                    <td class="right-align">500 руб.</td>
-                    <td class="right-align">500 руб.</td>
-                </tr>
-                <tr>
-                    <td>Сход-развал</td>
-                    <td class="right-align">500 руб.</td>
-                    <td class="right-align">500 руб.</td>
-                    <td class="right-align">500 руб.</td>
-                    <td class="right-align">500 руб.</td>
-                </tr>
-                <tr>
-                    <td>Сход-развал</td>
-                    <td class="right-align">500 руб.</td>
-                    <td class="right-align">500 руб.</td>
-                    <td class="right-align">500 руб.</td>
-                    <td class="right-align">500 руб.</td>
-                </tr>
-                <tr>
-                    <td>Сход-развал</td>
-                    <td class="right-align">500 руб.</td>
-                    <td class="right-align">500 руб.</td>
-                    <td class="right-align">500 руб.</td>
-                    <td class="right-align">500 руб.</td>
-                </tr>
-                <tr>
-                    <td>Сход-развал</td>
-                    <td class="right-align">500 руб.</td>
-                    <td class="right-align">500 руб.</td>
-                    <td class="right-align">500 руб.</td>
-                    <td class="right-align">500 руб.</td>
-                </tr>
+<div class="container">
+    <h3 class="title" style="display: inline-block; border-bottom: 4px solid #e91e63;">
+        Прейскурант цен на услуги
+    </h3>
+    <table class="table__price">
+        <thead>
+            <tr>
+                <th>Услуга</th>
+                <th class="right-align">1 класс*</th>
+                <th class="right-align">2 класс*</th>
+                <th class="right-align">3 класс*</th>
+                <th class="right-align">4 класс*</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Мойка а/м снаружи, без протирки, без ковриков</td>
+                <td class="right-align">150 руб.</td>
+                <td class="right-align">200 руб.</td>
+                <td class="right-align">250 руб.</td>
+                <td class="right-align">300 руб.</td>
+            </tr>
+            <tr>
+                <td>Мойка а/м + п/г без протирки, без ковриков
+                </td>
+                <td class="right-align">200 руб.</td>
+                <td class="right-align">250 руб.</td>
+                <td class="right-align">300 руб.</td>
+                <td class="right-align">350 руб.</td>
+            </tr>
+            <tr>
+                <td>Мойка с протиркой + п/г , без ковриков</td>
+                <td class="right-align">250 руб.</td>
+                <td class="right-align">300 руб.</td>
+                <td class="right-align">350 руб.</td>
+                <td class="right-align">400 руб.</td>
+            </tr>
+            <tr>
+                <td>Мойка с протиркой + п/г + 4 коврика</td>
+                <td class="right-align">300 руб.</td>
+                <td class="right-align">350 руб.</td>
+                <td class="right-align">400 руб.</td>
+                <td class="right-align">450 руб.</td>
+            </tr>
+            <tr>
 
-                <!-- Добавьте остальные строки -->
-            </tbody>
-        </table>
-        <p style="font-size: 0.7rem; color:dimgrey; font-weight: 600;">1 класс* - Автомобили класса "мини" <br>
-            2 класс* - Автомобили малого и среднего класса <br>
-            3 класс* - Автомобили бизнес и представительского классов, универсалы, кроссоверы, минивены <br>
-            4 класс* - Большие внедорожники и микроавтобусы
-        </p>
-    </div>
+                <td><span>Комплекс</span>
+                    Мойка с протиркой + п/г + 4 коврика + пылесос + влажная уборка</td>
+                <td class="right-align">450 руб.</td>
+                <td class="right-align">500 руб.</td>
+                <td class="right-align">550 руб.</td>
+                <td class="right-align">650 руб.</td>
+            </tr>
+            <tr>
+                <td><span>Комплекс+</span>
+                    Мойка с протиркой + п/г + 4 коврика + пылесос + багажник + влажная уборка пластика</td>
+                <td class="right-align">500 руб.</td>
+                <td class="right-align">550 руб.</td>
+                <td class="right-align">600 руб.</td>
+                <td class="right-align">-</td>
+            </tr>
+            <tr>
+                <td>Мойка ковриков</td>
+                <td class="right-align">50 руб.</td>
+                <td class="right-align">50 руб.</td>
+                <td class="right-align">50 руб.</td>
+                <td class="right-align">-</td>
+            </tr>
+            <tr>
+                <td>Мойка двигателя</td>
+                <td class="right-align">250 руб.</td>
+                <td class="right-align">300 руб.</td>
+                <td class="right-align">300 руб.</td>
+                <td class="right-align">300 руб.</td>
+            </tr>
+            <tr>
+                <td>Полироль пластика</td>
+                <td class="right-align">100 руб.</td>
+                <td class="right-align">100 руб.</td>
+                <td class="right-align">150 руб.</td>
+                <td class="right-align">100 руб.</td>
+            </tr>
+            <tr>
+                <td>Чистка лобового стекла</td>
+                <td class="right-align">50 руб.</td>
+                <td class="right-align">50 руб.</td>
+                <td class="right-align">100 руб.</td>
+                <td class="right-align">100 руб.</td>
+            </tr>
+            <tr>
+                <td>Чистка лобового стекла изнутри</td>
+                <td class="right-align">150 руб.</td>
+                <td class="right-align">150 руб.</td>
+                <td class="right-align">200 руб.</td>
+                <td class="right-align">150 руб.</td>
+            </tr>
+            <tr>
+                <td>Уборка салона пылесосом</td>
+                <td class="right-align">100 руб.</td>
+                <td class="right-align">100 руб.</td>
+                <td class="right-align">150 руб.</td>
+                <td class="right-align">150 руб.</td>
+            </tr>
+            <tr>
+                <td>Уборка багажника пылесосом</td>
+                <td class="right-align">50 руб.</td>
+                <td class="right-align">50 руб.</td>
+                <td class="right-align">100 руб.</td>
+                <td class="right-align">-</td>
+            </tr>
+            <tr>
+                <td>Влажная уборка пластика</td>
+                <td class="right-align">50 руб.</td>
+                <td class="right-align">50 руб.</td>
+                <td class="right-align">70 руб.</td>
+                <td class="right-align">50 руб.</td>
+            </tr>
+            <tr>
+                <td>Мойка снятых колес за 4 шт. без протирки R13 - R16</td>
+                <td class="right-align">150 руб.</td>
+                <td class="right-align">150 руб.</td>
+                <td class="right-align">150 руб.</td>
+                <td class="right-align">150 руб.</td>
+            </tr>
+            <tr>
+                <td>Мойка снятых колес за 4 шт. без протирки R17 и выше</td>
+                <td class="right-align">200 руб.</td>
+                <td class="right-align">200 руб.</td>
+                <td class="right-align">200 руб.</td>
+                <td class="right-align">200 руб.</td>
+            </tr>
+            <tr>
+                <td>Покрытие а/м полимером</td>
+                <td class="right-align">150 руб.</td>
+                <td class="right-align">150 руб.</td>
+                <td class="right-align">150 руб.</td>
+                <td class="right-align">-</td>
+            </tr>
+            <tr>
+                <td>Покрытие а/м полимерной пастой</td>
+                <td class="right-align">200 руб.</td>
+                <td class="right-align">200 руб.</td>
+                <td class="right-align">250 руб.</td>
+                <td class="right-align">-</td>
+            </tr>
+            <tr>
+                <td>Обработка кожи кондиционером за одно посадочное место</td>
+                <td class="right-align">50 руб.</td>
+                <td class="right-align">50 руб.</td>
+                <td class="right-align">50 руб.</td>
+                <td class="right-align">50 руб.</td>
+            </tr>
+            <tr>
+                <td>Мойка радиатора на а/м</td>
+                <td class="right-align">100 руб.</td>
+                <td class="right-align">100 руб.</td>
+                <td class="right-align">150 руб.</td>
+                <td class="right-align">150 руб.</td>
+            </tr>
+            <tr>
+                <td>Сухой туман</td>
+                <td class="right-align">600 руб.</td>
+                <td class="right-align">700 руб.</td>
+                <td class="right-align">800 руб.</td>
+                <td class="right-align">-</td>
+            </tr>
+            <tr>
+                <td>Сухой туман</td>
+                <td class="right-align">50 руб.</td>
+                <td class="right-align">50 руб.</td>
+                <td class="right-align">100 руб.</td>
+                <td class="right-align">-</td>
+            </tr>
+            <tr>
+                <td>Мойка снятого радиатора легковых а/м со спец. средством</td>
+                <td class="right-align">250 руб.</td>
+                <td class="right-align">250 руб.</td>
+                <td class="right-align">250 руб.</td>
+                <td class="right-align">-</td>
+            </tr>
+            <tr>
+                <td>Турбо сушка двигателя</td>
+                <td class="right-align">100 руб.</td>
+                <td class="right-align">100 руб.</td>
+                <td class="right-align">100 руб.</td>
+                <td class="right-align">100 руб.</td>
+            </tr>
+            <tr>
+                <td>Мойка снятого радиатора трактора, грузового а/м</td>
+                <td class="right-align">300 руб.</td>
+                <td class="right-align">300 руб.</td>
+                <td class="right-align">300 руб.</td>
+                <td class="right-align">300 руб.</td>
+            </tr>
 
-<section class="chemistry">
+            <!-- Добавьте остальные строки -->
+        </tbody>
+    </table>
+    <p style="font-size: 0.7rem; color:dimgrey; font-weight: 600;">
+        1 класс* - Легковые а/м, Нива <br>
+        2 класс* - Кроссоверы <br>
+        3 класс* - Джипы <br>
+        4 класс* - Большие внедорожники и микроавтобусы
+    </p>
+
+    <p class="text">Другие транспорты</p>
+
+    <table class="table__price">
+        <thead>
+            <tr>
+                <th class="left-align">Услуга</th>
+                <th class="right-align"></th>
+                <th class="right-align"></th>
+                <th class="right-align"></th>
+                <th class="right-align"></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="left-align">Мойка мотоцикла без протирки</td>
+                <td class="right-align"></td>
+                <td class="right-align"></td>
+                <td class="right-align"></td>
+                <td class="right-align">200 руб.</td>
+            </tr>
+            <tr>
+                <td class="left-align">Мойка квадроцикла без протирки</td>
+                <td class="right-align"></td>
+                <td class="right-align"></td>
+                <td class="right-align"></td>
+                <td class="right-align">300 руб.</td>
+            </tr>
+            <tr>
+                <td class="left-align">Чистка ковров за 1 м2</td>
+                <td class="right-align"></td>
+                <td class="right-align"></td>
+                <td class="right-align"></td>
+                <td class="right-align">100-120 руб.</td>
+            </tr>
+            <!-- Добавьте остальные строки -->
+        </tbody>
+    </table>
+
+</div>
+
+
+<div class="container">
+    <h3 class="title" style="display: inline-block; border-bottom: 4px solid #e91e63;">
+        Прейскурант цен на услуги химчистки
+    </h3>
+    <table class="table__price">
+        <thead>
+            <tr>
+                <th>Услуга</th>
+                <th class="right-align">1 класс*</th>
+                <th class="right-align">2 класс*</th>
+                <th class="right-align">3 класс*</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Потолок</td>
+                <td class="right-align">440 руб.</td>
+                <td class="right-align">480 руб.</td>
+                <td class="right-align">520 руб.</td>
+            </tr>
+            <tr>
+                <td>Сиденья (1 шт.)
+                </td>
+                <td class="right-align">300 руб.</td>
+                <td class="right-align">300 руб.</td>
+                <td class="right-align">300 руб.</td>
+            </tr>
+            <tr>
+                <td>Пол переднего места
+                </td>
+                <td class="right-align">300 руб.</td>
+                <td class="right-align">300 руб.</td>
+                <td class="right-align">300 руб.</td>
+            </tr>
+            <tr>
+                <td>Пол заднего дивана
+                </td>
+                <td class="right-align">400 руб.</td>
+                <td class="right-align">400 руб.</td>
+                <td class="right-align">400 руб.</td>
+            </tr>
+            <tr>
+                <td>Багажник
+                </td>
+                <td class="right-align">440 руб.</td>
+                <td class="right-align">440 руб.</td>
+                <td class="right-align">440 руб.</td>
+            </tr>
+            <tr>
+                <td>Дверь (1 шт.)
+                </td>
+                <td class="right-align">150 руб.</td>
+                <td class="right-align">150 руб.</td>
+                <td class="right-align">150 руб.</td>
+            </tr>
+            <tr>
+                <td>Общая стоимость
+                </td>
+                <td class="right-align">3580 руб.</td>
+                <td class="right-align">3650 руб.</td>
+                <td class="right-align">3720 руб.</td>
+            </tr>
+
+            <!-- Добавьте остальные строки -->
+        </tbody>
+    </table>
+    <p style="font-size: 0.7rem; color:dimgrey; font-weight: 600;">
+        1 класс* - Легковые а/м, Нива <br>
+        2 класс* - Кроссоверы <br>
+        3 класс* - Джипы <br>
+    </p>
+    <p class="text note" style="font-weight: 700; color: #e91e63;">ПРИМЕЧАНИЯ: <br> 1. Для сильно загрязненных машин
+        применять
+        коэффициент – 1,5 <br>
+        2.Сотрудники мойки не несут ответственность за перебои в работе двигателя после его мойки</p>
+</div>
+
+<!-- <section class="chemistry">
     <div class="container">
         <div class="chemistry__inner">
             <h3 class="title" style="display: inline-block; border-bottom: 4px solid #e91e63;">
@@ -158,20 +418,26 @@
                 Выберите интересующую вас услугу и нажмите на нее
             </p>
             <div class="row">
-                <div class="col-lg-3 col-sm-6 col-xs-12" style="text-align: center;">
-                    <a href="#"> <img src="{% static 'autowash/images/autowash-img1.jpg' %}" alt=""
-                            style="max-width: 100%; height: auto; display: inline-block;"></a>
-                    <a style="text-decoration: none; color: #000;" href="#">Шиномонтаж</a>
+                <div class="col-lg-3 col-md-6 col-sm-6" style="text-align: center;">
+                    <a href="{% url 'complexclear' %}">
+                        <img class="wash-img" src="{% static 'autowash/images/autowash-img1.jpg' %}" alt=""
+                            style="max-width: 100%; height: auto; display: inline-block;">
+                    </a>
+                    <a style="display: block; text-decoration: none; color: #000;" href="#">Комплексная химчистка</a>
                 </div>
-                <div class="col-lg-3 col-sm-6 col-xs-12" style="text-align: center;">
-                    <a href="#"> <img src="{% static 'autowash/images/autowash-img1.jpg' %}" alt=""
-                            style="max-width: 100%; height: auto; display: inline-block;"></a>
-                    <a style="text-decoration: none; color: #000;" href="#">Шиномонтаж</a>
+                <div class="col-lg-3 col-md-6 col-sm-6" style="text-align: center;">
+                    <a href="{% url 'expresswash' %}">
+                        <img class="wash-img" src="{% static 'autowash/images/autowash-img1.jpg' %}" alt=""
+                            style="max-width: 100%; height: auto; display: inline-block;">
+                    </a>
+                    <a style="display: block; text-decoration: none; color: #000;" href="#">Экспресс-мойка</a>
                 </div>
-                <div class="col-lg-3 col-sm-6 col-xs-12" style="text-align: center;">
-                    <a href="#"> <img src="{% static 'autowash/images/autowash-img1.jpg' %}" alt=""
-                            style="max-width: 100%; height: auto; display: inline-block;"></a>
-                    <a style="text-decoration: none; color: #000;" href="#">Шиномонтаж</a>
+                <div class="col-lg-3 col-md-6 col-sm-6" style="text-align: center;">
+                    <a href="{% url 'diskclear' %}">
+                        <img class="wash-img" src="{% static 'autowash/images/autowash-img1.jpg' %}" alt=""
+                            style="max-width: 100%; height: auto; display: inline-block;">
+                    </a>
+                    <a style="display: block; text-decoration: none; color: #000;" href="#">Химчистка дисков</a>
                 </div>
             </div>
             <div class="divider mt-3 mb-3"></div>
@@ -186,37 +452,43 @@
                 Можете не беспокоиться о здоровой атмосфере внутри салона, ведь предлагаемые нами составы обладают
                 гипоаллергенным эффектом и абсолютно безвредны даже для детей. Максимально глубокая степень очистки
                 любого материала гарантирует лоск и внешнюю привлекательность на долгие годы. При этом у нас одни из
-                самых выгодных цен в Москве, а удобный график работы и использование профессионального оборудования в
+                самых выгодных цен в Каменки, а удобный график работы и использование профессионального оборудования в
                 руках опытных специалистов надежно защитят ваш автомобиль! </p>
         </div>
     </div>
-</section>
+</section> -->
 
 
-<section class="guard">
+<!-- <section class="guard">
     <div class="container">
         <div class="guard__inner">
             <h3 class="title" style="display: inline-block; border-bottom: 4px solid #e91e63;">
-                Химчистка
+                Защита и полироль
             </h3>
             <p class="text">
                 Выберите интересующую вас услугу и нажмите на нее
             </p>
             <div class="row">
-                <div class="col-lg-3 col-sm-6 col-xs-12" style="text-align: center;">
-                    <a href="#"> <img src="{% static 'autowash/images/polirol.jpg' %}" alt=""
-                            style="max-width: 100%; height: auto; display: inline-block;"></a>
-                    <a style="text-decoration: none; color: #000;" href="#">Шиномонтаж</a>
+                <div class="col-lg-3 col-md-6 col-sm-6" style="text-align: center;">
+                    <a href="{% url 'expresswash' %}">
+                        <img class="wash-img" src="{% static 'autowash/images/autowash-img1.jpg' %}" alt=""
+                            style="max-width: 100%; height: auto; display: inline-block;">
+                    </a>
+                    <a style="display: block; text-decoration: none; color: #000;" href="#">Экспресс-мойка</a>
                 </div>
-                <div class="col-lg-3 col-sm-6 col-xs-12" style="text-align: center;">
-                    <a href="#"> <img src="{% static 'autowash/images/polirol.jpg' %}" alt=""
-                            style="max-width: 100%; height: auto; display: inline-block;"></a>
-                    <a style="text-decoration: none; color: #000;" href="#">Шиномонтаж</a>
+                <div class="col-lg-3 col-md-6 col-sm-6" style="text-align: center;">
+                    <a href="{% url 'expresswash' %}">
+                        <img class="wash-img" src="{% static 'autowash/images/autowash-img1.jpg' %}" alt=""
+                            style="max-width: 100%; height: auto; display: inline-block;">
+                    </a>
+                    <a style="display: block; text-decoration: none; color: #000;" href="#">Экспресс-мойка</a>
                 </div>
-                <div class="col-lg-3 col-sm-6 col-xs-12" style="text-align: center;">
-                    <a href="#"> <img src="{% static 'autowash/images/polirol.jpg' %}" alt=""
-                            style="max-width: 100%; height: auto; display: inline-block;"></a>
-                    <a style="text-decoration: none; color: #000;" href="#">Шиномонтаж</a>
+                <div class="col-lg-3 col-md-6 col-sm-6" style="text-align: center;">
+                    <a href="{% url 'expresswash' %}">
+                        <img class="wash-img" src="{% static 'autowash/images/autowash-img1.jpg' %}" alt=""
+                            style="max-width: 100%; height: auto; display: inline-block;">
+                    </a>
+                    <a style="display: block; text-decoration: none; color: #000;" href="#">Экспресс-мойка</a>
                 </div>
             </div>
             <div class="divider mt-3 mb-3"></div>
@@ -233,16 +505,16 @@
                     Восстановление былого блеска и яркости
                 </li>
             </ul>
-            <p class="text"> Для максимального эффекта специалисты «Метеор 24» используют сразу несколько технологий
+            <p class="text"> Для максимального эффекта специалисты ««АвтоМаг»» используют сразу несколько технологий
                 (защитная,
                 поверхностная или восстановительная полировка). Все зависит от степени повреждения лакокрасочного
                 покрытия и текущего состояния кузова. Мы проведем тщательную диагностику и подберем оптимальный вариант
                 с учетом цены. <br> <br>
-                Недорогая автомойка в Москве – это реально! Изучите прайс и ассортимент услуг «Метеор 24» и убедитесь в
+                Недорогая автомойка в Каменки – это реально! Изучите прайс и ассортимент услуг ««АвтоМаг»» и убедитесь в
                 этом сами. По всем интересующим вопросам обращайтесь к консультантам нашего центра по телефону. </p>
         </div>
     </div>
-</section>
+</section> -->
 
 
 

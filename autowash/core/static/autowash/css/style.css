@@ -3,6 +3,10 @@ body {
     font-weight: 400;
 }
 
+a {
+    text-decoration: none;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -114,7 +118,8 @@ ul {
     }
 }
 
-.item__numerate {
+.item__numerate,
+.item__numerates {
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -168,9 +173,7 @@ ul {
 }
 
 .advantages__inner {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: inline;
 }
 
 .advantages__items {
@@ -347,7 +350,7 @@ ul {
     padding: 15px;
 }
 
-.fitting__item img {
+.fitting__item {
     max-width: 100%;
     /* Максимальная ширина по размерам col-lg-3 */
     height: auto;
@@ -362,7 +365,8 @@ ul {
 
 
 .collapse__content-img,
-.collapse__info-img {
+.collapse__info-img,
+.all-img {
     max-width: 100%;
     /* Максимальная ширина изображения - 100% от родительского блока */
     max-height: 100%;
@@ -371,6 +375,11 @@ ul {
     /* Автоматический расчет ширины на основе максимальной ширины */
     height: auto;
     display: inline-block;
+}
+
+.icon-img {
+    width: 50px !important;
+    height: auto !important;
 }
 
 
@@ -422,7 +431,7 @@ tr:nth-child(odd) {
 
     th,
     td {
-        font-size: 14px;
+        font-size: 11px;
         /* Измените размер текста по вашему усмотрению */
     }
 
@@ -431,12 +440,18 @@ tr:nth-child(odd) {
         /* Измените размер заголовка по вашему усмотрению */
     }
 
-    p {
-        font-size: 12px;
-        /* Измените размер текста по вашему усмотрению */
-    }
 
     /* Другие стили, которые вы хотите изменить на более маленьких экранах */
+}
+
+@media (max-width:768px) {
+    .note {
+        font-size: 13px;
+    }
+
+    .title {
+        border-bottom: 0px solid #fff !important;
+    }
 }
 
 .divider-container {
@@ -451,3 +466,106 @@ tr:nth-child(odd) {
     background-color: #e91e63;
     width: 70px;
 }
+
+.locksmith__inner-img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    display: inline-block;
+}
+
+.excellenct__inner-item {
+    background-color: #000;
+}
+
+
+.excellenct__inner-item {
+    display: flex;
+    /* Включаем флекс-контейнер */
+    justify-content: center;
+    /* Центрирование по горизонтали */
+}
+
+
+.mobile {
+    display: none;
+}
+
+@media (max-width: 756px) {
+    .all {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+    }
+}
+
+
+.all__link {
+    color: #fff;
+    margin-top: 2rem;
+    display: block;
+}
+
+
+.fitting__item {
+    height: 200px;
+    margin-bottom: 2rem;
+}
+
+@media (max-width: 1000px) {
+    .fitting__item img {
+        min-width: 330px;
+    }
+}
+
+
+.expresswash__table-text {}
+
+.contains__item-title {
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.contains__item-text {
+    font-size: 0.8rem;
+}
+
+.contains__item-phone,
+.euro__table {
+    font-size: 1.1rem;
+    color: #000;
+}
+
+@media(max-width: 576px) {
+    .wash-img {
+        max-width: 60% !important;
+    }
+}
+
+/* .shop__inner {
+    margin-bottom: 9.5rem;
+}
+
+@media (max-width: 576px) {
+    .shop__inner {
+        margin-bottom: 0rem;
+    }
+} */
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.shop, .map__contact {
+    flex: 1;
+}
+
+/* Медиа-запрос для уменьшения размера шрифта на маленьких экранах */
+
+
+/* Этот код добавляет стили к вашей таблице и использует медиа-запрос для уменьшения размера шрифта таблицы при ширине экрана менее 600 пикселей (вы можете настроить это значение по своему усмотрению). Теперь текст в таблице будет менять размер, чтобы лучше соответствовать маленьким экранам. */

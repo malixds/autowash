@@ -1,0 +1,77 @@
+{% extends 'app.html' %}
+{% load static %}
+
+{% block content %}
+
+<section class="euro">
+    <div class="container">
+        <div class="euro__inner">
+            <h3 class="euro__title">
+                Консервация и чернение
+            </h3>
+            <div class="euro__inner-block row">
+                <div class="col-lg-8">
+                    <p class="text">
+                        Периодическая обработка лакокрасочного покрытия автомобиля и чернение шин помогут продлить срок
+                        эксплуатации и дольше сохранять первоначальный вид автомобиля.
+                    </p>
+                    <p class="text">
+                        Нанесение консерванта после полировки кузова защитит лакокрасочное покрытие от вредных
+                        воздействий окружающей среды, сохраняя внешний вид и предохраняя от микротрещин.
+                    </p>
+                    <p class="text">
+                        Чернение шин не только придаёт резине покрышек красивый вид, но и предохраняет их от избыточного
+                        воздействия влаги и реагентов.
+                    </p>
+                    <p class="text">
+                        Полный комплекс услуг по консервации и чернению продлит срок эксплуатации автомобиля за счёт
+                        предохранения от коррозии и преждевременного гниения.
+                    </p>
+
+                </div>
+                <div class="col-lg-4">
+                    <img style="    max-width: 80%;
+                    max-height: 100%;
+                    width: auto;
+                    height: auto;
+                    display: inline-block;" class="" src="{% static 'autowash/images/remont.jpg'%}" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="container">
+    <h3 class="title" style="display: inline-block; border-bottom: 4px solid #e91e63;">
+        Наши цены
+    </h3>
+    <table class="euro__table">
+        <thead>
+            <tr>
+                <th class="expresswash__table-text">Услуга</th>
+                <th class="expresswash__table-text">1 класс*</th>
+                <th class="expresswash__table-text">2 класс*</th>
+                <th class="expresswash__table-text">3 класс*</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="expresswash__table-text">Чернение резины</td>
+                <td class="expresswash__table-text">50 руб.</td>
+                <td class="expresswash__table-text">50 руб.</td>
+                <td class="expresswash__table-text">100 руб.</td>
+            </tr>
+            <!-- Добавьте остальные строки -->
+        </tbody>
+    </table>
+    <p style="font-size: 0.7rem; color:dimgrey; font-weight: 600;">
+        1 класс* - Автомобили класса "мини" <br>
+        2 класс* - Автомобили малого и среднего класса <br>
+        3 класс* - Автомобили бизнес и представительского классов, универсалы, кроссоверы, минивены <br>
+        4 класс* - Большие внедорожники и микроавтобусы
+    </p>
+</div>
+
+{% include 'map.html' %}
+
+
+{% endblock content %}

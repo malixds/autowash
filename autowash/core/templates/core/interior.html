@@ -1,0 +1,168 @@
+{% extends 'app.html' %}
+{% load static %}
+
+{% block content %}
+
+<section class="euro">
+    <div class="container">
+        <div class="euro__inner">
+            <h3 class="euro__title">
+                Уборка салона
+            </h3>
+            <div class="euro__inner-block row">
+                <div class="col-lg-8">
+                    <p class="text">
+                        Уход за салоном автомобиля можно осуществлять самостоятельно, но лучше доверить это
+                        специалистам. При помощи мощного оборудования наши мастера доведут салон вашего автомобиля до
+                        идеальной чистоты
+                    </p>
+                    <ul>
+                        <li>
+                            1. Уборка пыли с пластиковых поверхностей
+                        </li>
+                        <li>
+                            2. Уборка грязи и пыли из швов сидений и из-под ног пылесосом
+                        </li>
+                        <li>
+                            3. Протирка стёкол внутри
+                        </li>
+                        <li>
+                            4. Полировка пластика
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <img style="    max-width: 80%;
+                    max-height: 100%;
+                    width: auto;
+                    height: auto;
+                    display: inline-block;" class="" src="{% static 'autowash/images/remont.jpg'%}" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="container">
+    <h3 class="title" style="display: inline-block; border-bottom: 4px solid #e91e63;">
+        Наши цены
+    </h3>
+    <table class="euro__table">
+        <thead>
+            <tr>
+                <th class="expresswash__table-text">Услуга</th>
+                <th class="expresswash__table-text">1 класс*</th>
+                <th class="expresswash__table-text">2 класс*</th>
+                <th class="expresswash__table-text">3 класс*</th>
+                <th class="expresswash__table-text">4 класс*</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="expresswash__table-text">Мойка ковриков</td>
+                <td class="expresswash__table-text">50 руб.</td>
+                <td class="expresswash__table-text">50 руб.</td>
+                <td class="expresswash__table-text">50 руб.</td>
+                <td class="expresswash__table-text"></td>
+            </tr>
+            <tr>
+                <td class="expresswash__table-text">Чистка лобового стекла</td>
+                <td class="expresswash__table-text">50 руб.</td>
+                <td class="expresswash__table-text">50 руб.</td>
+                <td class="expresswash__table-text">100 руб.</td>
+                <td class="expresswash__table-text">100 руб.</td>
+            </tr>
+            <tr>
+                <td class="expresswash__table-text">Чистка стекол изнутри</td>
+                <td class="expresswash__table-text">150 руб.</td>
+                <td class="expresswash__table-text">150 руб.</td>
+                <td class="expresswash__table-text">200 руб.</td>
+                <td class="expresswash__table-text">150 руб.</td>
+            </tr>
+            <tr>
+                <td class="expresswash__table-text">Уборка салона пылесосом
+                </td>
+                <td class="expresswash__table-text">100 руб.</td>
+                <td class="expresswash__table-text">100 руб.</td>
+                <td class="expresswash__table-text">150 руб.</td>
+                <td class="expresswash__table-text">150 руб.</td>
+            </tr>
+            <tr>
+                <td class="expresswash__table-text">Уборка багажника пылесосом</td>
+                <td class="expresswash__table-text">50 руб.</td>
+                <td class="expresswash__table-text">50 руб.</td>
+                <td class="expresswash__table-text">100 руб.</td>
+                <td class="expresswash__table-text"></td>
+            </tr>
+            <tr>
+                <td class="expresswash__table-text">Влажная уборка пластика</td>
+                <td class="expresswash__table-text">50 руб.</td>
+                <td class="expresswash__table-text">50 руб.</td>
+                <td class="expresswash__table-text">70 руб.</td>
+                <td class="expresswash__table-text">50 руб.</td>
+            </tr>
+            <tr>
+                <td class="expresswash__table-text">Полироль пластика</td>
+                <td class="expresswash__table-text">100 руб.</td>
+                <td class="expresswash__table-text">100 руб.</td>
+                <td class="expresswash__table-text">150 руб.</td>
+                <td class="expresswash__table-text">100 руб.</td>
+            </tr>
+            <tr>
+                <td class="expresswash__table-text">Обработка кожи кондиционером за 1 посадочное место</td>
+                <td class="expresswash__table-text">50 руб.</td>
+                <td class="expresswash__table-text">50 руб.</td>
+                <td class="expresswash__table-text">50 руб.</td>
+                <td class="expresswash__table-text">50 руб.</td>
+            </tr>
+            <!-- 
+            <tr>
+                <td class="expresswash__table-text">Влажная уборка пластика</td>
+                <td class="expresswash__table-text">300 руб.</td>
+                <td class="expresswash__table-text">300 руб.</td>
+                <td class="expresswash__table-text">380 руб.</td>
+                <td class="expresswash__table-text">420 руб.</td>
+            </tr>
+            <tr>
+                <td class="expresswash__table-text">Комплексная уборка салона</td>
+                <td class="expresswash__table-text">300 руб.</td>
+                <td class="expresswash__table-text">300 руб.</td>
+                <td class="expresswash__table-text">380 руб.</td>
+                <td class="expresswash__table-text">420 руб.</td>
+            </tr>
+            <tr>
+                <td class="expresswash__table-text">Коврики все типы, пороги, стекла, пылесос, пластик</td>
+                <td class="expresswash__table-text">300 руб.</td>
+                <td class="expresswash__table-text">300 руб.</td>
+                <td class="expresswash__table-text">380 руб.</td>
+                <td class="expresswash__table-text">420 руб.</td>
+            </tr>
+            <tr>
+                <td class="expresswash__table-text">Кондиционер сидений кожи (комплекс)</td>
+                <td class="expresswash__table-text">300 руб.</td>
+                <td class="expresswash__table-text">300 руб.</td>
+                <td class="expresswash__table-text">380 руб.</td>
+                <td class="expresswash__table-text">420 руб.</td>
+            </tr>
+            <tr>
+                <td class="expresswash__table-text">Защитное покрытие сидений кожи (комплекс)</td>
+                <td class="expresswash__table-text">300 руб.</td>
+                <td class="expresswash__table-text">300 руб.</td>
+                <td class="expresswash__table-text">380 руб.</td>
+                <td class="expresswash__table-text">420 руб.</td>
+            </tr> -->
+
+            <!-- Добавьте остальные строки -->
+        </tbody>
+    </table>
+    <p style="font-size: 0.7rem; color:dimgrey; font-weight: 600;">
+        1 класс* - Автомобили класса "мини" <br>
+        2 класс* - Автомобили малого и среднего класса <br>
+        3 класс* - Автомобили бизнес и представительского классов, универсалы, кроссоверы, минивены <br>
+        4 класс* - Большие внедорожники и микроавтобусы
+    </p>
+</div>
+
+{% include 'map.html' %}
+
+
+{% endblock content %}

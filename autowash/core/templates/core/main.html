@@ -1,18 +1,15 @@
-
 {% extends 'app.html' %}
 {% load static%}
 
 {% block content %}
 
 
-<div class="text-center p-3 d-none d-md-block">
-    <img src="" height="120" alt="Company Logo">
-</div>
+
 
 <!-- <div class="parallax">
         <div class="background"></div>
         <div class="content" style="text-align: center;">
-            <h1>Работаем в Москве без выходных</h1>
+            <h1>Работаем в Каменки без выходных</h1>
             <p>Шиномонтаж, сход-развал, автомойка и слесарные работы</p>
         </div>
     </div> -->
@@ -22,8 +19,8 @@
         <div class="info__img"></div>
         <div class="info__content">
             <p>Работаем без выходных
-                в Москве</p>
-            <p>Шиномонтаж, сход-развал, автомойка и слесарные работы</p>
+                в Каменке</p>
+            <p>Автомойка, магазин</p>
         </div>
 
     </div>
@@ -39,11 +36,27 @@
         <div class="services__inner">
             <div class="services__inner-text mt-3">
                 <h2 class="services__inner-title title"
-                    style="display: inline-block; border-bottom: 4px solid #e91e63;">Услуги шиномонтажного центра</h2>
+                    style="display: inline-block; border-bottom: 4px solid #e91e63;">Услуги нашего центра</h2>
                 <p class="services__inner-desc">Выберите интересующую вас услугу и нажмите на нее</p>
             </div>
             <div class="row" style="justify-content: center;">
-                <div class="col-lg-3 col-sm-6 col-xs-12" style="text-align: center;">
+                <div class="col-lg-4 col-md-6 col-sm-6" style="text-align: center;">
+                    <a href="{% url 'wash' %}">
+                        <img class="wash-img" src="{% static 'autowash/images/autowash-img1.jpg' %}" alt=""
+                            style="max-width: 100%; height: auto; display: inline-block;">
+                    </a>
+                    <a href="{% url 'wash' %}" style="display: block; text-decoration: none; color: #000;"
+                        href="#">Автомойка</a>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6" style="text-align: center;">
+                    <a href="{% url 'shop' %}">
+                        <img class="wash-img" src="{% static 'autowash/images/shop.jpg' %}" alt=""
+                            style="max-width: 100%; height: auto; display: inline-block;">
+                    </a>
+                    <a href="{% url 'shop' %}" style="display: block; text-decoration: none; color: #000;"
+                        href="#">Магазин</a>
+                </div>
+                <!-- <div class="col-lg-3 col-sm-6 col-xs-12" style="text-align: center;">
                     <a href="#"> <img src="{% static 'autowash/images/coleso.jpg' %}" alt=""
                             style="max-width: 100%; height: auto; display: inline-block;"></a>
                     <a style="text-decoration: none; color: #000;" href="#">Шиномонтаж</a>
@@ -57,74 +70,19 @@
                     <a href="#"> <img src="{% static 'autowash/images/coleso.jpg' %}" alt=""
                             style="max-width: 100%; height: auto; display: inline-block;"></a>
                     <a style="text-decoration: none; color: #000;" href="#">Шиномонтаж</a>
-                </div>
-                <div class="col-lg-3 col-sm-6 col-xs-12" style="text-align: center;">
-                    <a href="#"> <img src="{% static 'autowash/images/coleso.jpg' %}" alt=""
-                            style="max-width: 100%; height: auto; display: inline-block;"></a>
-                    <a style="text-decoration: none; color: #000;" href="#">Шиномонтаж</a>
-                </div>
-                <div class="col-lg-3 col-sm-6 col-xs-12" style="text-align: center;">
-                    <a href="#"> <img src="{% static 'autowash/images/coleso.jpg' %}" alt=""
-                            style="max-width: 100%; height: auto; display: inline-block;"></a>
-                    <a style="text-decoration: none; color: #000;" href="#">Шиномонтаж</a>
-                </div>
-            </div>
-            <div class="services__inner-popular mt-3">
-                <h2 class="services__inner-popular-text title"
-                    style="display: inline-block; border-bottom: 4px solid #e91e63;">Популярные услуги в этом месяце
-                </h2>
-            </div>
-            <div class="row" style="justify-content: center;">
-                <div class="col-lg-3 col-sm-6 col-xs-12" style="text-align: center;">
-                    <a href="#"> <img src="{% static 'autowash/images/coleso.jpg' %}" alt=""
-                            style="max-width: 100%; height: auto; display: inline-block;"></a>
-                    <a style="text-decoration: none; color: #000;" href="#">Шиномонтаж</a>
-                </div>
-                <div class="col-lg-3 col-sm-6 col-xs-12" style="text-align: center;">
-                    <a href="#"> <img src="{% static 'autowash/images/coleso.jpg' %}" alt=""
-                            style="max-width: 100%; height: auto; display: inline-block;"></a>
-                    <a style="text-decoration: none; color: #000;" href="#">Шиномонтаж</a>
-                </div>
-                <div class="col-lg-3 col-sm-6 col-xs-12" style="text-align: center;">
-                    <a href="#"> <img src="{% static 'autowash/images/coleso.jpg' %}" alt=""
-                            style="max-width: 100%; height: auto; display: inline-block;"></a>
-                    <a style="text-decoration: none; color: #000;" href="#">Шиномонтаж</a>
-                </div>
-                <div class="col-lg-3 col-sm-6 col-xs-12" style="text-align: center;">
-                    <a href="#"> <img src="{% static 'autowash/images/coleso.jpg' %}" alt=""
-                            style="max-width: 100%; height: auto; display: inline-block;"></a>
-                    <a style="text-decoration: none; color: #000;" href="#">Шиномонтаж</a>
-                </div>
-                <div class="col-lg-3 col-sm-6 col-xs-12" style="text-align: center;">
-                    <a href="#"> <img src="{% static 'autowash/images/coleso.jpg' %}" alt=""
-                            style="max-width: 100%; height: auto; display: inline-block;"></a>
-                    <a style="text-decoration: none; color: #000;" href="#">Шиномонтаж</a>
-                </div>
+                </div> -->
             </div>
         </div>
     </div>
 </div>
 
-<div class="map__text mt-3" style="text-align: center;">
-    <h2 class="title">Выберите удобную точку и нажмите</h2>
-</div>
-<div class="map" style="align-items: center; text-align: center;">
-
-    <iframe
-        src="https://yandex.ru/map-widget/v1/?um=constructor%3A309fceba534ab88181a5ba94bc5445a76be4a75a185cf3493f1246b2f9865f7b&amp;source=constructor"
-        width="100%" height="275" frameborder="0"></iframe>
-</div>
+{% include 'map.html' %}
 
 <div class="about">
     <div class="container">
         <div class="about__text-1 text mt-3">
-            <p>«Метеор 24» – шиномонтаж в Москве, оказывающий также широкий спектр иных услуг на выгодных условиях:
-                автомойка, сход-развал, слесарные работы.</p>
-        </div>
-        <div class="about__text-1 text">
-            <p>«Даже если вы предпочитаете аккуратный стиль вождения, строго выполняете рекомендации производителя и
-                своевременно проводите диагностику всех узлов и механизмов, срочные шиномонтажные работы могут
-                понадобиться в любой момент.</p>
+            <p>««АвтоМаг»» – автомойка и магазин в Каменке, оказывающий широкий спектр услуг на выгодных
+                условиях.</p>
         </div>
         <div class="about__text-1 text">
             <p> Пробили покрышку, повредили диск на неровном дорожном покрытии или почувствовали недостаточное
@@ -169,102 +127,79 @@
                     Ассортимент услуг
                 </h2>
                 <p class="range__text-text text">
-                    Спектр услуг, оказываемых специалистами «Метеор 24», не ограничивается сезонной
+                    Спектр услуг, оказываемых специалистами ««АвтоМаг»», не ограничивается сезонной
                     заменой покрышек
                     или ремонтом дисков. У нас вы сможете:
                 </p>
             </div>
             <div class="row">
                 <div class="col-lg-4 col-sm-12">
-                    <div class="range__item">
-                        <p class="range__numerate">
-                            1
-                        </p>
-                        <p class="range__text">
-                            Проверить давление в шинах и подкачать их азотом
-                        </p>
-                    </div>
+                    <ul class="advantages__items">
+                        <li class="advantages__items-item range__item">
+                            <p class="item__numerates">
+                                1
+                            </p>
+                            <p class="item__text">
+                                Мойка автомобилей различных категорий
+                            </p>
+                        </li>
                 </div>
                 <div class="col-lg-4 col-sm-12">
-                    <div class="range__item">
-                        <p class="range__numerate">
-                            1
-                        </p>
-                        <p class="range__text">
-                            Проверить давление в шинах и подкачать их азотом
-                        </p>
-                    </div>
+                    <ul class="advantages__items">
+                        <li class="advantages__items-item range__item">
+                            <p class="item__numerates">
+                                2
+                            </p>
+                            <p class="item__text">
+                                Уборка салона
+                            </p>
+                        </li>
                 </div>
                 <div class="col-lg-4 col-sm-12">
-                    <div class="range__item">
-                        <p class="range__numerate">
-                            1
-                        </p>
-                        <p class="range__text">
-                            Проверить давление в шинах и подкачать их азотом
-                        </p>
-                    </div>
+                    <ul class="advantages__items">
+                        <li class="advantages__items-item range__item">
+                            <p class="item__numerates">
+                                3
+                            </p>
+                            <p class="item__text">
+                                Мойка комплектующих транспорта
+                            </p>
+                        </li>
                 </div>
                 <div class="col-lg-4 col-sm-12">
-                    <div class="range__item">
-                        <p class="range__numerate">
-                            1
-                        </p>
-                        <p class="range__text">
-                            Проверить давление в шинах и подкачать их азотом
-                        </p>
-                    </div>
+                    <ul class="advantages__items">
+                        <li class="advantages__items-item range__item">
+                            <p class="item__numerates">
+                                4
+                            </p>
+                            <p class="item__text">
+                                Наличие магазина
+                            </p>
+                        </li>
                 </div>
                 <div class="col-lg-4 col-sm-12">
-                    <div class="range__item">
-                        <p class="range__numerate">
-                            1
-                        </p>
-                        <p class="range__text">
-                            Проверить давление в шинах и подкачать их азотом
-                        </p>
-                    </div>
+                    <ul class="advantages__items">
+                        <li class="advantages__items-item range__item">
+                            <p class="item__numerates">
+                                5
+                            </p>
+                            <p class="item__text">
+                                Сухой туман
+                            </p>
+                        </li>
                 </div>
                 <div class="col-lg-4 col-sm-12">
-                    <div class="range__item">
-                        <p class="range__numerate">
-                            1
-                        </p>
-                        <p class="range__text">
-                            Проверить давление в шинах и подкачать их азотом
-                        </p>
-                    </div>
+                    <ul class="advantages__items">
+                        <li class="advantages__items-item range__item">
+                            <p class="item__numerates">
+                                6
+                            </p>
+                            <p class="item__text">
+                                Полирование
+                            </p>
+                        </li>
                 </div>
-                <div class="col-lg-4 col-sm-12">
-                    <div class="range__item">
-                        <p class="range__numerate">
-                            1
-                        </p>
-                        <p class="range__text">
-                            Проверить давление в шинах и подкачать их азотом
-                        </p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-sm-12">
-                    <div class="range__item">
-                        <p class="range__numerate">
-                            1
-                        </p>
-                        <p class="range__text">
-                            Проверить давление в шинах и подкачать их азотом
-                        </p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-sm-12">
-                    <div class="range__item">
-                        <p class="range__numerate">
-                            1
-                        </p>
-                        <p class="range__text">
-                            Проверить давление в шинах и подкачать их азотом
-                        </p>
-                    </div>
-                </div>
+
 
             </div>
         </div>
@@ -280,15 +215,15 @@
         </div>
         <div class="price__text">
             <p class="price__text text">
-                Главное преимущество наших центров – это гармоничное сочетание цены и качества оказываемых услуг.
-                Можете не сомневаться: у нас вы найдете не только гарантированно качественный шиномонтаж, но и самые
-                приемлемые цены в Москве.
+                Главное преимущество нашего центра – это гармоничное сочетание цены и качества оказываемых услуг.
+                Можете не сомневаться: у нас вы найдете не только гарантированно качественную автомойку, но и самые
+                приемлемые цены в Каменке.
             </p>
             <p class="price__text text">
                 Мы предлагаем прозрачное ценообразование и развернутый прайс услуг. Каждый заказ выполняется в
                 индивидуальном порядке, а все мероприятия согласуются с автовладельцами. Более подробную информацию
-                об условиях, полном комплексе услуг, специальных предложениях и адресах центров можно получить у
-                консультантов «Метеор 24» по указанным на сайте телефонам.
+                об условиях, полном комплексе услуг, специальных предложениях можно получить у
+                консультантов ««АвтоМаг»» по указанному на сайте телефону.
             </p>
         </div>
     </div>
@@ -296,58 +231,81 @@
 
 <div class="advantages">
     <div class="container">
-        <div class="advantages__inner" style="align-items: center;">
-            <h3 class="title" style="display: inline-block; border-bottom: 4px solid #e91e63;">Наши преимущества</h3>
-            <ul class="advantages__items" style="align-items: center;">
-                <li class="advantages__items-item">
-                    <p class="item__numerate">
+        <div class="advantages__inner">
+            <h2 class="advantages__inner-title title"
+                style="text-align: center; display: inline-block; border-bottom: 4px solid #e91e63">
+                Наши преимущества
+            </h2>
+            <div class="row">
+                <div class="col-lg-4 col-sm-12">
+                    <ul class="advantages__items">
+                        <li class="advantages__items-item range__item">
+                            <p class="item__numerates">
+                                1
+                            </p>
+                            <p class="item__text">
+                                Быстрая работа в любое время суток
+                            </p>
+                        </li>
+                </div>
+                <div class="col-lg-4 col-sm-12">
+                    <ul class="advantages__items">
+                        <li class="advantages__items-item range__item">
+                            <p class="item__numerates">
+                                2
+                            </p>
+                            <p class="item__text">
+                                Низкие цены
+                            </p>
+                        </li>
+                </div>
+                <div class="col-lg-4 col-sm-12">
+                    <ul class="advantages__items">
+                        <li class="advantages__items-item range__item">
+                            <p class="item__numerates">
+                                3
+                            </p>
+                            <p class="item__text">
+                                Разнообразие предоставляемых услуг
+                            </p>
+                        </li>
+                </div>
+                <div class="col-lg-4 col-sm-12">
+                    <ul class="advantages__items">
+                        <li class="advantages__items-item range__item">
+                            <p class="item__numerates">
+                                4
+                            </p>
+                            <p class="item__text">
+                                Вежливый персонал
+                            </p>
+                        </li>
+                </div>
+                <div class="col-lg-4 col-sm-12">
+                    <ul class="advantages__items">
+                        <li class="advantages__items-item range__item">
+                            <p class="item__numerates">
+                                5
+                            </p>
+                            <p class="item__text">
+                                Богатый ассортимент в магазине
+                            </p>
+                        </li>
+                </div>
+                <div class="col-lg-4 col-sm-12">
+                    <ul class="advantages__items">
+                        <li class="advantages__items-item range__item">
+                            <p class="item__numerates">
+                                6
+                            </p>
+                            <p class="item__text">
+                                Легкая доступность
+                            </p>
+                        </li>
+                </div>
 
-                    </p>
-                    <p class="item__text">
-                        Быстрая работа в любое время суток
-                    </p>
-                </li>
-                <li class="advantages__items-item">
-                    <p class="item__numerate">
 
-                    </p>
-                    <p class="item__text">
-                        Быстрая работа в любое время суток
-                    </p>
-                </li>
-                <li class="advantages__items-item">
-                    <p class="item__numerate">
-
-                    </p>
-                    <p class="item__text">
-                        Быстрая работа в любое время суток
-                    </p>
-                </li>
-                <li class="advantages__items-item">
-                    <p class="item__numerate">
-
-                    </p>
-                    <p class="item__text">
-                        Быстрая работа в любое время суток
-                    </p>
-                </li>
-                <li class="advantages__items-item">
-                    <p class="item__numerate">
-
-                    </p>
-                    <p class="item__text">
-                        Быстрая работа в любое время суток
-                    </p>
-                </li>
-                <li class="advantages__items-item">
-                    <p class="item__numerate">
-
-                    </p>
-                    <p class="item__text">
-                        Быстрая работа в любое время суток
-                    </p>
-                </li>
-            </ul>
+            </div>
         </div>
     </div>
 </div>

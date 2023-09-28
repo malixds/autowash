@@ -1,0 +1,52 @@
+{% extends 'app.html' %}
+{% load static %}
+
+{% block content %}
+
+<section class="contacts mt-3">
+    <div class="container">
+        <div class="contacts__inner">
+            <h3 class="mb-5" style="text-align: center;">
+                Адреса и контакты
+            </h3>
+            <div class="contacts__item row">
+                <div class="col-lg-3 mx-auto text-center">
+                    <h5 class="contains__item-title">
+                        Переулок Калинина, 3
+                    </h5>
+                    <p class="contains__item-text mb-1">Автомойка, магазин</p>
+                    <a href="tel:+79273862432" class="contains__item-phone">+7 (927) 386-24-32</a>
+                    <p class="text mt-1">alexnic898@gmail.com</p>
+                </div>
+                <!-- <div class="col-lg-3">
+                    <h5 class="contains__item-title">
+                        Ленинградское шоссе, 63Г
+                    </h5>
+                    <p class="contains__item-text">Сход-развал, шиномонтаж</p>
+                    <a href="tel:+74952368436" class="contains__item-phone">8 (495) 236-84-36</a>
+                </div>
+                <div class="col-lg-3">
+                    <h5 class="contains__item-title">
+                        Ленинградское шоссе, 63Г
+                    </h5>
+                    <p class="contains__item-text">Сход-развал, шиномонтаж</p>
+                    <a href="tel:+74952368436" class="contains__item-phone">8 (495) 236-84-36</a>
+                </div>
+                <div class="col-lg-3">
+                    <h5 class="contains__item-title">
+                        Ленинградское шоссе, 63Г
+                    </h5>
+                    <p class="contains__item-text">Сход-развал, шиномонтаж</p>
+                    <a href="tel:+74952368436" class="contains__item-phone">8 (495) 236-84-36</a>
+                </div> -->
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="map__contact">
+    {% include 'map.html' %}
+</div>
+
+
+{% endblock content %}

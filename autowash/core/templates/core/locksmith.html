@@ -1,0 +1,203 @@
+{% extends 'app.html' %}
+{% load static%}
+
+{% block content %}
+
+
+<section class="locksmith">
+    <div class="container">
+        <div class="locksmith__inner mb-3">
+            <div class="locksmith__title">
+                <h3 class="locksmith__inner-title title red-line">
+                    Технический ремонт автомобилей
+                </h3>
+            </div>
+
+            <div class="locksmith__inner-content row">
+                <div class="col-lg-8">
+                    <p class="text">
+                        Перед каждой поездкой водитель не должен забывать о визуальном осмотре автомобиля. При этом
+                        проверяется давление в шинах, работа указателей поворотов, звукового сигнала и осветительных
+                        приборов, а также уровень рабочих жидкостей (масло, тормозная, омывательная, охлаждающая).
+                        Перечень признаков, которые явно свидетельствуют о необходимости срочно посетить ближайший
+                        автосервис:
+                    </p>
+                    <ul style="list-style-type: disc; margin-left: 16px;">
+                        <li class="text">
+                            Неустойчивое поведение автомобиля на дороге (недостаточная или избыточная поворачиваемость);
+                        </li>
+                        <li class="text">
+                            Появление посторонних шумов и стука со стороны двигателя или подвески;
+                        </li>
+                        <li class="text">
+                            Повышенный расход топлива и износ резины;
+                        </li>
+                        <li class="text">
+                            Проблемы с рулевым управлением и тормозной системой.
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <img style="    max-width: 100%;
+                    max-height: 100%;
+                    width: auto;
+                    height: auto;
+                    display: inline-block;" class="" src="{% static 'autowash/images/remont.jpg'%}" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="locksmith-prices">
+    <div class="container">
+        <div class="locksmith-prices__inner">
+            <h3 class="title red-line">
+                Цены на услуги ремонта
+            </h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Услуга</th>
+                        <th class="right-align">Цена</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Шиномонтаж</td>
+                        <td class="right-align">1000 руб.</td>
+                    </tr>
+                    <tr>
+                        <td>Сход-развал</td>
+                        <td class="right-align">500 руб.</td>
+                    </tr>
+                    <tr>
+                        <td>Сход-развал</td>
+                        <td class="right-align">500 руб.</td>
+                    </tr>
+                    <tr>
+                        <td>Сход-развал</td>
+                        <td class="right-align">500 руб.</td>
+                    </tr>
+                    <tr>
+                        <td>Сход-развал</td>
+                        <td class="right-align">500 руб.</td>
+                    </tr>
+                    <tr>
+                        <td>Сход-развал</td>
+                        <td class="right-align">500 руб.</td>
+                    </tr>
+                    <tr>
+                        <td>Сход-развал</td>
+                        <td class="right-align">500 руб.</td>
+                    </tr>
+
+                    <!-- Добавьте остальные строки -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+
+<section class="maintenance">
+    <div class="container">
+        <div class="maintance__inner mt-3">
+            <h3 class="title red-line">
+                Обязательное ТО и его специфика
+            </h3>
+            <p class="text">
+                Сезонное техническое обслуживание автомобиля должно проводиться только в условиях специализированных
+                центров. Они оборудованы необходимым оборудованием для проведения диагностики, а квалификация персонала
+                позволяет выявлять и устранять даже самые серьезные неисправности. Для каждой марки и модели автомобиля
+                производитель устанавливает свои сроки и график прохождения обязательного ТО.
+                В процессе эксплуатации рекомендуется следовать рекомендациям:
+                <br>
+                • Сезонное ТО – замена салонного воздушного фильтра (в некоторых случаях при эксплуатации в условиях
+                крупного мегаполиса рекомендуется менять фильтр дважды в год). <br>
+                • Каждые 15 тысяч километров пробега (или раз в год) – замена масляного и топливного фильтров, моторного
+                масла, воздушного фильтра, свечей зажигания. <br>
+                • Каждые 60 тысяч километров пробега – замена масла в коробке передач и охлаждающей жидкости.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section class="specificity mt-3">
+    <div class="container">
+        <div class="specificity__inner">
+            <h3 class="title red-line">
+                Специфика работ в ««АвтоМаг»»
+            </h3>
+            <p class="text">
+                Техническое обслуживание автомобиля в условиях профессионального автосервиса – это залог длительной,
+                успешной и безопасной эксплуатации. Если вы стали владельцем нового авто, то проходить технический
+                осмотр – ваша прямая обязанность, которая является условием полноценного гарантийного обслуживания в
+                сервисных центрах дилера. Для подержанных автомобилей периодический осмотр и диагностика должны
+                проводиться не только согласно рекомендациям производителя, но и в случае возникновения непредвиденных
+                обстоятельств.
+                Наши мастера выполнят техническое обслуживание автомобиля в Каменки согласно рекомендациям и регламенту
+                производителя. <br>
+                В процессе осмотра осуществляется следующий перечень работ: <br>
+                • Диагностика рулевого механизма, систем подвески и тормозной системы; <br>
+                • Проверка состояния аккумулятора и электрических систем; <br>
+                • Проверка затяжки гаек на всех колесах; <br>
+                • Замена расходных материалов согласно регламенту производителя. <br>
+            </p>
+        </div>
+    </div>
+</section>
+
+
+<section class="excellence">
+    <div class="container">
+        <div class="excellence__inner">
+            <h3 class="title red-line">
+                Наши преимущества
+            </h3>
+            <div class="excellence__inner-content row row-cols-3">
+                <div class="excellenct__inner-item col-lg-4">
+                    <i class="fa-sharp fa-solid fa-dollar-sign" style="color: #000000;"></i>
+                    <p class="text">
+                        Гибкие цены и длительная гарантия на все виды услуг
+                    </p>
+                </div>
+                <div class="excellenct__inner-item col-lg-4">
+                    <img class="icon-img" src="{% static 'autowash/images/chart.png' %}" style="width: 60px;" alt="">
+                    <p class="text">
+                        Гибкие цены и длительная гарантия на все виды услуг
+                    </p>
+                </div>
+                <div class="excellenct__inner-item col-lg-4">
+                    <img class="icon-img" src="{% static 'autowash/images/car-repair.png' %}" style="width: 60px;"
+                        alt="">
+                    <p class="text">
+                        Гибкие цены и длительная гарантия на все виды услуг
+                    </p>
+                </div>
+                <div class="excellenct__inner-item col-lg-4">
+                    <img class="icon-img" src="{% static 'autowash/images/fast.png' %}" style="width: 60px;" alt="">
+                    <p class="text">
+                        Гибкие цены и длительная гарантия на все виды услуг
+                    </p>
+                </div>
+                <div class="excellenct__inner-item col-lg-4">
+                    <img class="icon-img" src="{% static 'autowash/images/repair-tool.png' %}" style="width: 60px;"
+                        alt="">
+                    <p class="text">
+                        Гибкие цены и длительная гарантия на все виды услуг
+                    </p>
+                </div>
+                <div class="excellenct__inner-item col-lg-4">
+                    <img class="icon-img" src="{% static 'autowash/images/time.png' %}" style="width: 60px;" alt="">
+                    <p class="text">
+                        Гибкие цены и длительная гарантия на все виды услуг
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% include 'map.html' %}
+{% endblock content %}
