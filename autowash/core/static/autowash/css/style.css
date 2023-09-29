@@ -564,7 +564,9 @@ body {
 .shop, .map__contact {
     flex: 1;
 }
-
+.list__text span {
+    padding-left: 2.5px;
+}
 /* Медиа-запрос для уменьшения размера шрифта на маленьких экранах */
 
 
