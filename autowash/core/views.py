@@ -79,3 +79,9 @@ def complexClear(request):
 def diskClear(request):
 
     return render(request, 'core/diskclear.html')
+
+def photo_wash(request):
+    return render(request, 'core/photowash.html')
+
+def photo_shop(request):
+    return render(request, 'core/photoshop.html')

@@ -1,16 +1,27 @@
 <footer class="footer">
     <div class="container" style="margin:auto;">
-        <div class="row">
-            <div class="footer-col">
+        <div class="row" style="justify-content: center;">
+            <div class="footer-col col-lg-2 col-xs-12">
                 <a href="{% url 'main' %}"><h4>Домой</h4></a>
             </div>
-            <div class="footer-col">
+            <div class="footer-col col-lg-2 col-xs-12">
                 <a href="{% url 'wash' %}"><h4>Автомойка</h4></a>
             </div>
-            <div class="footer-col">
+            <div class="footer-col col-lg-2 col-xs-12">
                 <a class="text" href="{% url 'shop' %}"><h4>О магазине</h4> </a>
             </div>
-            <div class="footer-col">
+            <div class="footer-col col-lg-2 col-xs-12">
+                <a href="{% url 'contacts'%}"><h4>Фотогалерея</h4></a>
+                <ul class="ps-2">
+                    <li>
+                        <a href="">Магазин</a>
+                    </li>
+                    <li>
+                        <a href="">Мойка</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-col col-lg-2 col-xs-12">
                 <a href="{% url 'contacts'%}"><h4>Контакты</h4></a>
             </div>
         </div>

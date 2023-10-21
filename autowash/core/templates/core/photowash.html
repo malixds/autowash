@@ -1,0 +1,44 @@
+{% extends 'app.html' %}
+{% load static %}
+
+{% block title%}Фото-мойка{% endblock %}
+
+{% block content %}
+
+<div class="photowash mt-3"> 
+    <div class="container">
+        <div class="photowash__inner row">
+            <div class="photowash__inner-img col-lg-4  col-sm-6 col-xs-12 mb-2">
+                    <img class="" src="{% static 'autowash/images/pa0.jpg' %}" alt=""
+                        style="width: 100%; height: 500px; display: inline-block;">
+            </div>
+            <div class="photowash__inner-img col-lg-4 col-sm-6 col-xs-12 mb-2" style="margin-right: auto; margin-left: auto;">
+                    <img class="" src="{% static 'autowash/images/pa1.jpg' %}" alt=""
+                        style="width: 100%; height: 500px; display: inline-block;">
+            </div>
+            <div class="photowash__inner-img col-lg-4 col-sm-6 col-xs-12 mb-2" style="margin-right: auto; margin-left: auto;">
+                    <img class="" src="{% static 'autowash/images/pa2.jpg' %}" alt=""
+                        style="width: 100%; height: 500px; display: inline-block;">
+            </div>
+            <div class="photowash__inner-img col-lg-4 col-sm-6 col-xs-12 mb-2" style="margin-right: auto; margin-left: auto;">
+                    <img class="" src="{% static 'autowash/images/pa3.jpg' %}" alt=""
+                        style="width: 100%; height: 500px; display: inline-block;">
+            </div>
+            <div class="photowash__inner-img col-lg-4 col-sm-6 col-xs-12 mb-2" style="margin-right: auto; margin-left: auto;">
+                    <img class="" src="{% static 'autowash/images/pa4.jpg' %}" alt=""
+                        style="width: 100%; height: 500px; display: inline-block;">
+            </div>
+            <div class="photowash__inner-img col-lg-4 col-sm-6 col-xs-12 mb-2" style="margin-right: auto; margin-left: auto;">
+                    <img class="" src="{% static 'autowash/images/pa5.jpg' %}" alt=""
+                        style="width: 100%; height: 500px; display: inline-block;">
+            </div>
+            <div class="photowash__inner-img col-lg-4  col-sm-6 col-xs-12 mb-2">
+                    <img class="" src="{% static 'autowash/images/pa6.jpg' %}" alt=""
+                        style="width: 100%; height: 500px; display: inline-block;">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}

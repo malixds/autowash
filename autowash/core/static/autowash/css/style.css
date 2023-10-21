@@ -212,7 +212,7 @@ ul {
     /* Растянуться на доступное пространство */
     position: relative;
     overflow: hidden;
-    height: 350px;
+    height: 450px;
 }
 
 .info__img {
@@ -267,7 +267,6 @@ ul {
 }
 
 .footer-col {
-    width: 25%;
     padding: 0 15px;
 }
 
@@ -330,18 +329,6 @@ ul {
 }
 
 /*responsive*/
-@media(max-width: 767px) {
-    .footer-col {
-        width: 50%;
-        margin-bottom: 30px;
-    }
-}
-
-@media(max-width: 574px) {
-    .footer-col {
-        width: 100%;
-    }
-}
 
 /* FITTING */
 /* __________________________________________________ */
@@ -545,6 +532,12 @@ tr:nth-child(odd) {
     }
 }
 
+
+.dropdown-item-photoshop:hover,
+.dropdown-item-photowash:hover{
+    background-color: #212529 !important;
+}
+
 /* .shop__inner {
     margin-bottom: 9.5rem;
 }
@@ -561,7 +554,7 @@ body {
     min-height: 100vh;
 }
 
-.shop, .map__contact {
+.shop, .map__contact , .photoshop, .photowash{
     flex: 1;
 }
 .list__text span {
@@ -571,3 +564,15 @@ body {
 
 
 /* Этот код добавляет стили к вашей таблице и использует медиа-запрос для уменьшения размера шрифта таблицы при ширине экрана менее 600 пикселей (вы можете настроить это значение по своему усмотрению). Теперь текст в таблице будет менять размер, чтобы лучше соответствовать маленьким экранам. */
+
+@media(max-width: 576px)
+{
+    .logo-1, .logo-3{
+        width: 250px !important;
+    }
+}
+@media(max-height: 700px){
+    .photowash__inner-img {
+        height: 100% !important;
+    }
+}

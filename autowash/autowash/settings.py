@@ -12,21 +12,38 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 
 from pathlib import Path
 
+import os
+
+from dotenv import load_dotenv
+
+import sys
+
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
-print('VOT ONA!:', BASE_DIR)
 
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
-# SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-6z+m57$7^rd$$hxp1+6m93)!bhokj0+_6&zhqbta2s8li+s8xe'
-
-# SECURITY WARNING: don't run with debug turned on in production!
+load_dotenv()
+SECRET_KEY = os.getenv('SECRET_KEY')
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['85.193.94.244', '127.0.0.1', 'localhost']
+
+# sys.getdefaultencoding()
+
+# os.putenv('LANG', 'en_US.UTF-8')
+# os.putenv('LC_ALL', 'en_US.UTF-8')
+
+# SSESSION_COOKIE_SECURE = True
+# CSRF_COOKIE_SECURE = True
+
+# SECURE_SSL_REDIRECT = True
+
+# SECURE_HSTS_SECONDS = 31536000  # 1 year
+
 
 
 # Application definition
@@ -119,7 +136,6 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
-import os
 
 STATIC_URL = 'static/'
 STATICFILES_DIRS = (
