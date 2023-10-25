@@ -28,9 +28,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 load_dotenv()
 SECRET_KEY = os.getenv('SECRET_KEY')
-DEBUG = True
+DEBUG = os.getenv("DEBUG", "False") == "True"
 
 ALLOWED_HOSTS = ['85.193.94.244', '127.0.0.1', 'localhost']
+
+
+DEVELOPMENT_MODE = os.getenv("DEVELOPMENT_MODE", "False") == "True"
 
 # sys.getdefaultencoding()
 
